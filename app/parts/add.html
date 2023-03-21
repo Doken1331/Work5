@@ -1,0 +1,53 @@
+<form action="" name="form" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Создать магазин</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body-left">
+            <label for="name" class="modal-body-title">
+              Шаблон
+            </label>
+            <select id="name" class="modal-body-select">
+              <option selected>Стандартный</option>
+              <option value="Дипломная работа">Дипломная работа</option>
+              <option value="Курсовая работа">Курсовая работа</option>
+              <option value="Диссертация">Диссертация</option>
+              <option value="Контрольная работа">Контрольная работа</option>
+              <option value="Реферат">Реферат</option>
+            </select>
+          </div>
+          <div class="modal-body-right">
+            <label for="scheme" class="modal-body-title">
+              Цветовая схема
+            </label>
+            <select id="scheme" class="modal-body-select">
+              <option selected>Классическая</option>
+              <option value="Черный">Черный</option>
+              <option value="Белый">Белый</option>
+            </select>
+          </div>
+          <div class="modal-body-full">
+            <label for="domain" class="modal-body-title form-label">
+              Домен
+            </label>
+            <div class="modal-body-full-content">
+              <input type="text" id="domain" class="modal-body-full-input" placeholder="Например: ivangrozniy" minlength="6">
+            <div class="modal-body-full-domain">
+              .work5.ru
+            </div>
+            </div>
+            <div class="modal-body-full-rule">
+              В названии домена разрешены латиница и “-”, запрещается использовать словосочетание Work 5. После создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по <a href="#!">ссылке</a>.
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+          <button type="submit" class="btn btn-primary" id="send">Создать</button>
+        </div>
+      </div>
+    </div>
+</form>

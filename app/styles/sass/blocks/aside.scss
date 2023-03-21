@@ -1,0 +1,136 @@
+.aside {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: $mainColor;
+    width: 100%;
+    max-width: 256px;
+    height: 100vh;
+    padding-right: 10px;
+    box-shadow: 0px 0px 38px rgba(136, 167, 245, 0.08);
+
+    &__img {
+        margin-bottom: 20px;
+        margin: 30px 25px;
+    }
+
+    &__nav {
+
+        &-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            &-item {
+                position: relative;
+
+                &-link {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    position: relative;
+                    height: 50px;
+                    margin-left: 65px;
+                    color: $textColor;
+                    font-weight: 500;
+                    transition: all .2s ease;
+
+                    &_active {
+
+                        &::before {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            left: -65px;
+                            background: $asideIconHover;
+                            width: 4px;
+                            height: 50px;
+                            box-shadow: 0px 2px 10px rgba(102, 102, 204, 0.67);
+                        }
+                    }
+
+                    &:hover {
+                        color: #343434;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: -40px;
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    &_home::after {
+                        background: url(../images/icon-home.svg) center/contain no-repeat;
+                    }
+
+                    &_shop::after {
+                        background: url(../images/icon-cart.svg) center/contain no-repeat;
+                    }
+
+                    &_promo::after {
+                        background: url(../images/icon-megaphone.svg) center/contain no-repeat;
+                    }
+
+                    &_statistics::after {
+                        background: url(../images/icon-diagram.svg) center/contain no-repeat;
+                    }
+
+                    &_balance::after {
+                        background: url(../images/icon-wallet.svg) center/contain no-repeat;
+                    }
+
+                    &_data::after {
+                        background: url(../images/icon-avatar.svg) center/contain no-repeat;
+                    }
+
+                    &_faq::after {
+                        background: url(../images/icon-question.svg) center/contain no-repeat;
+                    }
+
+                    &_help::after {
+                        background: url(../images/icon-headset.svg) center/contain no-repeat;
+                    }
+
+                    &_exit::after {
+                        background: url(../images/icon-exit.svg) center/contain no-repeat;
+                        fill: #343434;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .aside {
+        &__nav {
+
+            &-list {
+
+                &-item {
+
+                    &-link {
+                        height: 45px;
+
+                        font-size: 12px;
+                        margin-left: 50px;
+
+                        &::after {
+                            left: -35px;
+                        }
+
+                        &_active::before {
+                            left: -50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

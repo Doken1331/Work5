@@ -1,0 +1,34 @@
+{
+  "shops": [
+    {
+      "name": "Реферат",
+      "domain": "TestTest.work5.ru",
+      "scheme": "Черный",
+      "id": 8364427
+    },
+    {
+      "name": "Курсовая работа",
+      "domain": "TestTest2.work5.ru",
+      "scheme": "Классическая",
+      "id": 7869775
+    },
+    {
+      "id": 1788337,
+      "name": "Диссертация",
+      "domain": "TestTest4.work5.ru",
+      "scheme": "Классическая"
+    },
+    {
+      "id": 3967146,
+      "name": "Дипломная работа",
+      "domain": "TestTest3.work5.ru",
+      "scheme": "Классическая"
+    },
+    {
+      "id": 9854635,
+      "name": "Контрольная работа",
+      "domain": "TestTest5.work5.ru",
+      "scheme": "Классическая"
+    }
+  ]
+}

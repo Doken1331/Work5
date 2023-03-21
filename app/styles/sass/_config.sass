@@ -1,0 +1,82 @@
+// USER VARIABLES SECTION
+
+$accent: #4B66F9 // Accent Color
+$fontsize: 14px // Body Font Size
+$mainColor: #fff // main color
+$secondColor: #343434 // main color
+$textColor: #7D7D7D // Text Color
+$asideIconHover: #6666CC // Icon hover text
+$textColorWhite: #fefefe // Text Color White
+$btnBgColor: #55C97B // Button bg color
+$btnSecondBgColor: #B1B1B1 // Button 2 bg color
+$btnThirdBgColor: #6666CC // Button 2 bg color
+$titleColorWhite: #FEFEFF // title white
+$bgBody: #F8FAFF // title white
+$btnBgColorHover: #2e9450 // Button bg color hover
+$btnSecondBgColorHover: #868686 // Button bg color hover
+$btnTextColor: #fff // btn text color
+$lineheight: 25.2px // Document Line Height
+$userfont: 'Roboto', sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+$height-icon: 25px
+$width-line: 35px
+$height-line: 4px
+$transition-time: 0.3s
+$rotation: 45deg
+$translateY: ($height-icon / 2)
+$translateX: 0
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+@import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+@import 'node_modules/bootstrap/scss/_modal.scss' // Optional Bootstrap Modal
+
+// FONTS LOAD SECTION
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+// GENERAL CSS SETTINGS
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textColor
+	min-width: 320px
+	position: relative
+	background: #F5F5F5
+	touch-action: pan-y
+	-ms-touch-action: pan-y
+	overflow-x: hidden
+
+a
+	text-decoration: none

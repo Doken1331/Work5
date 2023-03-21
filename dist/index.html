@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>
+        Work 5 - Мои магазины 
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 col-xxl-2 d-none d-md-block">
+                <aside class="aside">
+    <a href="/">
+        <img src="images/logo.svg" alt="logo" class="aside__img">
+    </a>
+    <nav class="aside__nav">
+        <ul class="aside__nav-list">
+            <li class="aside__nav-list-item">
+                <a href="#!" class="aside__nav-list-item-link aside__nav-list-item-link_home">
+                    Главная
+                </a>
+            </li>
+            <li class="aside__nav-list-item">
+                <a href="#!" class="aside__nav-list-item-link aside__nav-list-item-link_active aside__nav-list-item-link_shop">
+                    Мои магазины
+                </a>
+            </li>
+            <li class="aside__nav-list-item">
+                <a href="#!" class="aside__nav-list-item-link aside__nav-list-item-link_promo">
+                    Промоматериалы
+                </a>
+            </li>
+            <li class="aside__nav-list-item">
+                <a href="#!" class="aside__nav-list-item-link aside__nav-list-item-link_statistics">
+                    Статистика
+                </a>
+            </li>
+            <li class="aside__nav-list-item">
+                <a href="#!" class="aside__nav-list-item-link aside__nav-list-item-link_balance">
+                    Баланс
+                </a>
+            </li>
+            <li class="aside__nav-list-item">
+                <a href="#!" class="aside__nav-list-item-link aside__nav-list-item-link_data">
+                    Персональные данные
+                </a>
+            </li>
+            <li class="aside__nav-list-item">
+                <a href="#!" class="aside__nav-list-item-link aside__nav-list-item-link_faq">
+                    FAQ
+                </a>
+            </li>
+            <li class="aside__nav-list-item">
+                <a href="#!" class="aside__nav-list-item-link aside__nav-list-item-link_help">
+                    Техподдержка
+                </a>
+            </li>
+            <li class="aside__nav-list-item">
+                <a href="#!" class="aside__nav-list-item-link aside__nav-list-item-link_exit">
+                    Выход
+                </a>
+            </li>
+        </ul>
+    </nav>
+</aside>
+
+            </div>
+            <div class="col-12 col-xxl-10 col-md-9">
+                <div class="row">
+    <div class="col-12">
+        <header class="header">
+            <div class="row">   
+                <div class="col-12 d-flex d-md-none justify-content-between">
+                    <a href="/" class="header__logo">
+                        <img src="images/logo.svg" alt="logo" class="header__logo-img">
+                    </a>
+                    <div class="header__mobile d-block d-md-none">
+                        <a href="" class="header__mobile_button">
+                            <spun class="header__mobile-lines"></spun>
+                        </a>
+                        <div class="header__mobile-nav">
+                            <h2 class="header__mobile-title">
+                                Меню
+                            </h2>
+                            <div class="header__mobile-nav">
+                                <a href="#!" class="header__mobile-link">Главная</a>
+                                <a href="#!" class="header__mobile-link">Мои магазины</a>
+                                <a href="#!" class="header__mobile-link">Промоматериалы</a>
+                                <a href="#!" class="header__mobile-link">Статистика</a>
+                                <a href="#!" class="header__mobile-link">Баланс</a>
+                                <a href="#!" class="header__mobile-link">Персональные данные</a>
+                                <a href="#!" class="header__mobile-link">FAQ</a>
+                                <a href="#!" class="header__mobile-link">Техподдержка</a>
+                                <a href="#!" class="header__mobile-link">Выход</a>
+                            </div>
+                        </div>
+                        <div class="header__mobile-overlay"></div>
+                    </div>
+                </div>             
+                <div class="col-12 col-xxl-8 col-xl-7 col-lg-6 col-md-4 p-0">
+                    <nav class="header__breadcrumb">
+                        <ul class="header__breadcrumb-list">
+                            <li class="header__breadcrumb-list-item"><a href="#">Главная</a></li>
+                            <li class="header__breadcrumb-list-item">Мои магазины</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-xxl-4 col-xl-5 col-lg-6 col-md-8 p-0">
+                    <div class="header__profile">
+                        <div class="header__profile-message header__profile-message_active">
+                            <img src="images/icon-message.svg" alt="icon-message">
+                        </div>
+                        <div class="header__profile-data">
+                            <img src="images/dist/avatar.png" alt="avatar" class="header__profile-data-avatar">
+                            <div class="header__profile-data-name">
+                                Максим Добжанский
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </header>
+    </div>    
+</div>
+
+                <section class="shop">
+        <div class="row">
+            <div class="col-12 col-md-11">
+                <div class="shop__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Создать свой магазин
+                </div>
+            </div>        
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-11">
+                <h2 class="shop__title">
+                    Управление магазинами
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-11">
+                <div class="shop__table">
+                    <div class="shop__table-header">
+                        <div class="shop__table-header-num">
+                            №
+                        </div>
+                        <div class="shop__table-header-name">
+                            Название
+                        </div>
+                        <div class="shop__table-header-adress">
+                            Адрес
+                        </div>
+                        <div class="shop__table-header-action">
+                            Действие
+                        </div>
+                    </div>
+                    <div class="shop__table-content">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+                <form action="" name="form" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Создать магазин</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body-left">
+            <label for="name" class="modal-body-title">
+              Шаблон
+            </label>
+            <select id="name" class="modal-body-select">
+              <option selected>Стандартный</option>
+              <option value="Дипломная работа">Дипломная работа</option>
+              <option value="Курсовая работа">Курсовая работа</option>
+              <option value="Диссертация">Диссертация</option>
+              <option value="Контрольная работа">Контрольная работа</option>
+              <option value="Реферат">Реферат</option>
+            </select>
+          </div>
+          <div class="modal-body-right">
+            <label for="scheme" class="modal-body-title">
+              Цветовая схема
+            </label>
+            <select id="scheme" class="modal-body-select">
+              <option selected>Классическая</option>
+              <option value="Черный">Черный</option>
+              <option value="Белый">Белый</option>
+            </select>
+          </div>
+          <div class="modal-body-full">
+            <label for="domain" class="modal-body-title form-label">
+              Домен
+            </label>
+            <div class="modal-body-full-content">
+              <input type="text" id="domain" class="modal-body-full-input" placeholder="Например: ivangrozniy" minlength="6">
+            <div class="modal-body-full-domain">
+              .work5.ru
+            </div>
+            </div>
+            <div class="modal-body-full-rule">
+              В названии домена разрешены латиница и “-”, запрещается использовать словосочетание Work 5. После создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по <a href="#!">ссылке</a>.
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+          <button type="submit" class="btn btn-primary" id="send">Создать</button>
+        </div>
+      </div>
+    </div>
+</form>
+
+                <form class="modal fade" id="editShop" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="exampleModalLabel">Редактировать магазин</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body-left">
+            <h3 class="modal-body-title">
+              Шаблон
+            </h3>
+            <select id="nameEdit" class="modal-body-select">
+              <option selected>Стандартный</option>
+              <option value="Дипломная работа">Дипломная работа</option>
+              <option value="Курсовая работа">Курсовая работа</option>
+              <option value="Диссертация">Диссертация</option>
+              <option value="Контрольная работа">Контрольная работа</option>
+              <option value="Реферат">Реферат</option>
+            </select>
+          </div>
+          <div class="modal-body-right">
+            <h3 class="modal-body-title">
+              Цветовая схема
+            </h3>
+            <select id="schemeEdit" class="modal-body-select">
+              <option selected>Классическая</option>
+              <option value="Черный">Черный</option>
+              <option value="Белый">Белый</option>
+            </select>
+          </div>
+          <div class="modal-body-full">
+            <h3 class="modal-body-title">
+              Домен
+            </h3>
+            <div class="modal-body-full-content">
+              <input type="text" id="domainEdit" class="modal-body-full-input" placeholder="Например: ivangrozniy">
+            <div class="modal-body-full-domain">
+              .work5.ru
+            </div>
+            </div>
+            <div class="modal-body-full-rule">
+              В названии домена разрешены латиница и “-”, запрещается использовать словосочетание Work 5. После создания магазина Вы сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по <a href="#!">ссылке</a>.
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+          <button type="button" class="btn btn-primary" id="edit">Редактировать</button>
+        </div>
+      </div>
+    </div>
+</form>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="js/app.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+.shop {
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background: $btnBgColor;
+        height: 36px;
+        font-size: 12px;
+        padding-left: 15px;
+        margin-bottom: 30px;
+        max-width: 185px;
+        color: $btnTextColor;
+        border-radius: 5px;
+        transition: all .2s ease;
+        cursor: pointer;
+
+        &:hover {
+            background: $btnBgColorHover;
+        }
+
+        &::after {
+            content: '+';
+            background: url();
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        color: $secondColor;
+        margin-bottom: 24px;
+    }
+
+    &__table {
+        position: relative;
+        background: $mainColor;
+        border-radius: 5px;
+        padding: 30px;
+        color: $secondColor;
+        font-weight: 500;
+        margin-bottom: 24px;
+        box-shadow: 0px 11px 21px rgba(40, 40, 40, 0.07);
+        overflow: auto;
+
+        &-header {
+            display: grid;
+            grid-template-columns: 10% 30% 30% 30%;
+            grid-column-gap: 5px;
+            margin-bottom: 24px;
+        }
+
+        &-row {
+            display: grid;
+            grid-template-columns: 10% 30% 30% 30%;
+            align-items: center;
+            grid-column-gap: 10px;
+            color: $textColor;
+            padding-right: 30px;
+
+            &:not(:last-child)::after {
+                content: "";
+                grid-column-start: 1;
+                grid-column-end: 5;
+                background: #f1f1f1;
+                width: 100%;
+                height: 1px;
+                margin: 20px 0;
+            }
+
+            &-cell {
+
+                &-num,
+                &-adress {
+                    word-break: break-all;
+                }
+
+                &-action {
+                    display: grid;
+                    grid-template-columns: repeat(2, 50%);
+                    gap: 10px;
+
+                    &-btn {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+                        border-radius: 5px;
+                        width: 100%;
+                        height: 36px;
+                        color: $btnTextColor;
+                        font-size: 12px;
+                        transition: all .2s ease;
+                        padding: 0 50px 0 75px;
+                        cursor: pointer;
+
+                        &_edit {
+                            background: $btnBgColor;
+
+                            &:hover {
+                                background: $btnBgColorHover;
+                            }
+
+                            span {
+                                position: relative;
+
+                                &::after {
+                                    content: '';
+                                    background: url(../images/icon-edit.svg) center/contain no-repeat;
+                                    position: absolute;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    left: -30px;
+                                    width: 25px;
+                                    height: 20px;
+                                }
+                            }
+                        }
+
+                        &_delete {
+                            background: $btnSecondBgColor;
+
+                            &:hover {
+                                background: $btnSecondBgColorHover;
+                            }
+
+                            span {
+                                position: relative;
+
+                                &::after {
+                                    content: '';
+                                    background: url(../images/icon-cancel.svg) center/contain no-repeat;
+                                    position: absolute;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    left: -30px;
+                                    width: 20px;
+                                    height: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1399px) {
+    .shop__table-row-cell-action {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .shop {
+        &__btn {
+            margin: 0 auto 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .shop__table-row-cell-action {
+        max-width: 170px;
+    }
+
+    .shop__table-header {
+        column-gap: 10px;
+        grid-template-columns: 30px 160px 220px 200px;
+    }
+
+    .shop__table-row {
+        grid-template-columns: 30px 160px 220px 200px;
+    }
+}
